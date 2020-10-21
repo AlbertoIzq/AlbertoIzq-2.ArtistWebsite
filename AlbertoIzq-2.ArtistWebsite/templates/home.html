@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         .container {
-            padding: 80px 120px;
+            padding: 80px 120px; /* edited attribute */
         }
 
         /* Description Section */
@@ -20,15 +20,15 @@
             height: 80%;
             opacity: 0.8;
         }
-            .person:hover {
+            .person:hover { /* hover is an attribute of person class */
                 border-color: #f1f1f1;
             }
 
         /* Carousel */
-        .carousel-inner img {
+        .carousel-inner img { /* img is an object created inside carousel-inner class */
             -webkit-filter: grayscale(30%);
-            filter: grayscale(30%); /* make all photos black and white */
-            width: 100%; /* Set width to 100% */
+            filter: grayscale(30%);
+            width: 100%;
             margin: auto;
         }
 
@@ -53,17 +53,53 @@
             .bg-1 p {
                 font-style: italic;
             }
-            .bg-1 .centered {
+            .bg-1 a {
+                color: #bdbdbd;
+            }
+
+            .bg-1 .centered { /* centered is a used class inside a bg-1 object */
                 text-align: center;
             }
                 .bg-1 .centered > div {
                     float: none;
                     display: inline-block;
                 }
+            
             .bg-1 img {
                 width: 100%;
-                height: 200px;
+                height: 180px;
              }
+
+            .bg-1 .list-group-item:first-child { /* Remove rounded borders from list */
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+            .bg-1 .list-group-item:last-child {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .bg-1 .thumbnail { /* Remove border and add padding to thumbnails */
+                padding: 0 0 15px 0;
+                border: none;
+                border-radius: 0;
+            }
+                .bg-1 .thumbnail p {
+                    margin-top: 15px;
+                    color: #555;
+                }
+            .bg-1 .btn { /* Black buttons with extra padding and without rounded borders */
+                padding: 10px 20px;
+                background-color: #333;
+                color: #f1f1f1;
+                border-radius: 0;
+                transition: .2s;
+            }
+                .bg-1 .btn:hover, .btn:focus { /* On hover, the color of .btn will transition to white with black text */
+                    border: 1px solid #333;
+                    background-color: #fff;
+                    color: #000;
+                }
     </style>
 </head>
 <body>
@@ -173,7 +209,7 @@
     <div class="bg-1">
         <div class="container">
             <h3 class="text-center">MEDIA</h3>
-            <p class="text-center">Check out my media<br>Feel free to comment, like & suscribe!</p>
+            <p class="text-center">Check out my media!<br>Feel free to comment, like & suscribe</p>
             <div class="list-group">
                 <a href="https://www.youtube.com/channel/UCRdIyXsSDyB4ptQ7QFncoiQ" target="_blank" class="list-group-item">Youtube channel<span class="badge">35 Videos</span></a>
                 <a href="https://soundcloud.com/soundaker" target="_blank" class="list-group-item">Soundcloud profile<span class="badge">21 Tracks</span></a>
@@ -186,7 +222,7 @@
                     <img src="static/images/media1.jpg" alt="Media 1">
                     <p><strong>Dancing</strong></p>
                     <p>Dancing to electronic music</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn">Playlist</button>
                 </div>
             </div>
             <div class="col-sm-2">
@@ -194,7 +230,7 @@
                     <img src="static/images/media2.jpg" alt="Media 2">
                     <p><strong>Guitar&Singing</strong></p>
                     <p>Classical guitar & singing covers</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn">Playlist</button>
                 </div>
             </div>
             <div class="col-sm-2">
@@ -202,7 +238,7 @@
                     <img src="static/images/media3.jpg" alt="Media 3">
                     <p><strong>Metal album</strong></p>
                     <p>The endless plan (2019)</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn">Playlist</button>
                 </div>
             </div>
             <div class="col-sm-2">
@@ -210,7 +246,7 @@
                     <img src="static/images/media4.jpg" alt="Media 4">
                     <p><strong>Electronic</strong></p>
                     <p>Music production</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn">Song list</button>
                 </div>
             </div>
         </div>

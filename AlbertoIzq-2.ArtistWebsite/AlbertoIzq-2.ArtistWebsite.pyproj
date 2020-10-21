@@ -54,6 +54,7 @@
     <Content Include="static\images\soundaker3.jpg" />
     <Content Include="templates\bandTemplate.html" />
     <Content Include="templates\home.html" />
+    <Content Include="templates\test.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
