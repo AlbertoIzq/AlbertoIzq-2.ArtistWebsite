@@ -12,18 +12,6 @@
             padding: 80px 120px; /* edited attribute */
         }
 
-        /* Description Section */
-        .person {
-            border: 7px solid transparent;
-            margin-bottom: 25px;
-            width: 80%;
-            height: 80%;
-            opacity: 0.8;
-        }
-            .person:hover { /* hover is an attribute of person class */
-                border-color: #f1f1f1;
-            }
-
         /* Carousel */
         .carousel-inner img { /* img is an object created inside carousel-inner class */
             -webkit-filter: grayscale(30%);
@@ -42,6 +30,18 @@
             }
         }
 
+        /* Description Section */
+        .person {
+            border: 7px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.8;
+        }
+            .person:hover { /* hover is an attribute of person class */
+                border-color: #f1f1f1;
+            }
+
         /* Media */
         .bg-1 {
             background: #2d2d30;
@@ -57,17 +57,9 @@
                 color: #bdbdbd;
             }
 
-            .bg-1 .centered { /* centered is a used class inside a bg-1 object */
-                text-align: center;
-            }
-                .bg-1 .centered > div {
-                    float: none;
-                    display: inline-block;
-                }
-            
             .bg-1 img {
                 width: 100%;
-                height: 180px;
+                height: 200px;
              }
 
             .bg-1 .list-group-item:first-child { /* Remove rounded borders from list */
@@ -212,41 +204,41 @@
             <p class="text-center">Check out my media!<br>Feel free to comment, like & suscribe</p>
             <div class="list-group">
                 <a href="https://www.youtube.com/channel/UCRdIyXsSDyB4ptQ7QFncoiQ" target="_blank" class="list-group-item">Youtube channel<span class="badge">35 Videos</span></a>
-                <a href="https://soundcloud.com/soundaker" target="_blank" class="list-group-item">Soundcloud profile<span class="badge">21 Tracks</span></a>
+                <a href="https://soundcloud.com/soundaker/tracks" target="_blank" class="list-group-item">Soundcloud profile<span class="badge">21 Tracks</span></a>
                 <a href="https://soundaker.bandcamp.com/releases" target="_blank" class="list-group-item">Bandcamp site <span class="label label-pill label-primary">Buy it here!</span></a>
             </div>
-        </div>
-        <div class="row text-center centered">
-            <div class="col-sm-2">
-                <div class="thumbnail">
-                    <img src="static/images/media1.jpg" alt="Media 1">
-                    <p><strong>Dancing</strong></p>
-                    <p>Dancing to electronic music</p>
-                    <button class="btn">Playlist</button>
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="static/images/media1.jpg" alt="Media 1">
+                        <p><strong>Dancing</strong></p>
+                        <p>Dancing to electronic music</p>
+                        <button class="btn">Playlist</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="thumbnail">
-                    <img src="static/images/media2.jpg" alt="Media 2">
-                    <p><strong>Guitar&Singing</strong></p>
-                    <p>Classical guitar & singing covers</p>
-                    <button class="btn">Playlist</button>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="static/images/media2.jpg" alt="Media 2">
+                        <p><strong>Guitar&Singing</strong></p>
+                        <p>Classical guitar & singing covers</p>
+                        <button class="btn">Playlist</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="thumbnail">
-                    <img src="static/images/media3.jpg" alt="Media 3">
-                    <p><strong>Metal album</strong></p>
-                    <p>The endless plan (2019)</p>
-                    <button class="btn">Playlist</button>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="static/images/media3.jpg" alt="Media 3">
+                        <p><strong>Metal album</strong></p>
+                        <p>The endless plan (2019)</p>
+                        <button class="btn">Playlist</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="thumbnail">
-                    <img src="static/images/media4.jpg" alt="Media 4">
-                    <p><strong>Electronic</strong></p>
-                    <p>Music production</p>
-                    <button class="btn">Song list</button>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="static/images/media4.jpg" alt="Media 4">
+                        <p><strong>Electronic</strong></p>
+                        <p>Music production</p>
+                        <button class="btn">Song list</button>
+                    </div>
                 </div>
             </div>
         </div>
