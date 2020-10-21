@@ -45,6 +45,13 @@
     <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="runtime.txt" />
+    <Content Include="static\images\carousel1.jpg" />
+    <Content Include="static\images\carousel2.jpg" />
+    <Content Include="static\images\carousel3.jpg" />
+    <Content Include="static\images\carousel4.jpg" />
+    <Content Include="static\images\soundaker1.jpg" />
+    <Content Include="static\images\soundaker2.jpg" />
+    <Content Include="static\images\soundaker3.jpg" />
     <Content Include="templates\bandTemplate.html" />
     <Content Include="templates\home.html" />
   </ItemGroup>
