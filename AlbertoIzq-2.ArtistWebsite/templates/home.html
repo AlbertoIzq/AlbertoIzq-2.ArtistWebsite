@@ -8,12 +8,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link href="{{url_for('static', filename = 'css/nav_bar.css')}}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Used for social media icons -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <style>
-        /* GENERAL */
+        /* ___GENERAL___ */
         body {
             font: 400 15px/1.8 Lato, sans-serif;
             color: #777;
@@ -41,7 +40,57 @@
             resize: none;
         }
 
-        /* CAROUSEL */
+        /* ___NAVEGATION BAR___ */
+        /* Add a dark background color with a little bit see-through */
+        .navbar {
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            font-family: Montserrat, sans-serif;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+            /* Add a gray color to all navbar links */
+            .navbar li a, .navbar .navbar-brand {
+                color: #d5d5d5 !important;
+            }
+
+        /* On hover, the links will turn white */
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        /* The active link */
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        /* Remove border color from the collapsible button */
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        /* Dropdown */
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        /* Dropdown links */
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+            /* On hover, the dropdown links will turn red */
+            .dropdown-menu li a:hover {
+                background-color: red !important;
+            }
+
+
+        /* ___CAROUSEL___ */
         .carousel-inner img { /* img is an object created inside carousel-inner class */
             -webkit-filter: grayscale(30%);
             filter: grayscale(30%);
@@ -59,7 +108,7 @@
             }
         }
 
-        /* ARTIST */
+        /* ___ARTIST___ */
         .person {
             border: 7px solid transparent;
             margin-bottom: 25px;
@@ -72,7 +121,7 @@
                 border-color: #f1f1f1;
             }
 
-        /* MEDIA */
+        /* ___MEDIA___ */
         .bg-1 {
             background: #2d2d30;
             color: #bdbdbd;
@@ -122,15 +171,15 @@
             color: #f1f1f1;
             border-radius: 0;
             transition: .2s;
-            }
-
-        .btn:hover, .btn:active { /* On hover, the color of .btn will transition to white with black text */
-            border: 1px solid #333;
-            background-color: #fff;
-            color: #000;
         }
 
-        /* COLLABS */
+            .btn:hover, .btn:active { /* On hover, the color of .btn will transition to white with black text */
+                border: 1px solid #333;
+                background-color: #fff;
+                color: #000;
+            }
+
+        /* ___COLLABS___ */
         .nav a {
             color: #777;
         }
@@ -138,12 +187,12 @@
         .myLink, .myLink:focus, .myLink:active, myLink:hover, .myLink:visited {
             color: #777;
         }
-        
-        .myLink:focus, .myLink:visited {
-            text-decoration: none;
-        }
 
-        /* FOOTER */
+            .myLink:focus, .myLink:visited {
+                text-decoration: none;
+            }
+
+        /* ___FOOTER___ */
         /* Add a dark background color to the footer */
         footer {
             background-color: #2d2d30;
@@ -390,7 +439,7 @@
         </div>
         <br>
         <!-- COLLABS -->
-        <h3 id="collabs" class="text-center">Collabs</h3>
+        <h3 id="collabs" class="text-center" style=" padding-top: 80px">Collabs</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#collabs1">Singing</a></li>
             <li><a data-toggle="tab" href="#collabs2">Metal music</a></li>
@@ -447,8 +496,8 @@
 
     <!-- END IMAGE -->
     <img src="static/images/endpage.jpg" class="img-responsive" style="width:100%">
-
     <!-- END PAGE CONTENT -->
+
     <!-- FOOTER -->
     <footer class="text-center">
     <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
