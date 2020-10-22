@@ -99,8 +99,43 @@
     </style>
 </head>
 <body>
+    <!-- Navegation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Navegation bar
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+    </div>
+        -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#artist">ARTIST</a></li>
+                    <li><a href="#media">MEDIA</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            MORE
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#collabs">Collabs</a></li>
+                        </ul>
+                    </li>
+                    <!-- Possible search icon
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Carousel Section -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="home" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -151,7 +186,7 @@
     </div>
 
     <!-- Description Section -->
-    <div class="container text-center">
+    <div id="artist" class="container text-center">
         <h3>SOUNDAKER</h3>
         <p><em>Music is my passion</em></p>
         <!-- Description -->
@@ -203,7 +238,7 @@
 
     <!-- Media Section -->
     <div class="bg-1">
-        <div class="container">
+        <div id="media" class="container">
             <!-- Sites list -->
             <h3 class="text-center">MEDIA</h3>
             <p class="text-center">Check out my media!<br>Feel free to comment, like & suscribe</p>
@@ -249,7 +284,7 @@
                 </div>
             </div>
             <!-- Collabs -->
-            <h3 class="text-center">Collabs</h3>
+            <h3 id="collabs" class="text-center">Collabs</h3>
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Singing</a></li>
                 <li><a data-toggle="tab" href="#menu1">Metal music</a></li>
@@ -308,7 +343,7 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="container">
+    <div id="contact" class="container">
         <h3 class="text-center">CONTACT</h3>
         <p class="text-center"><em>I''d like to hear from you!</em></p>
         <div class="row test">
