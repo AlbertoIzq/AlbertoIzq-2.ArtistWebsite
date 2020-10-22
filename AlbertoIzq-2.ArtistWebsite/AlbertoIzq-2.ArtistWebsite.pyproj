@@ -53,7 +53,8 @@
     <Content Include="static\images\soundaker1.jpg" />
     <Content Include="static\images\soundaker2.jpg" />
     <Content Include="static\images\soundaker3.jpg" />
-    <Content Include="templates\bandTemplate.html" />
+    <Content Include="templates\bandTemplateBootstrap.html" />
+    <Content Include="templates\bandTemplateW3schools.html" />
     <Content Include="templates\home.html" />
     <Content Include="templates\test.html" />
   </ItemGroup>

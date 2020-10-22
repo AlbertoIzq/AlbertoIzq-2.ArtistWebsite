@@ -5,25 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link href="{{url_for('static', filename = 'css/nav_bar.css')}}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .container {
-            padding: 80px 120px; /* edited attribute */
+        /* GENERAL */
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
         }
 
-        /* General */
         /* Overwrite default styles of h3 and h4 */
         h3, h4 {
             margin: 10px 0 30px 0;
             letter-spacing: 10px;
             font-size: 20px;
             color: #111;
+        }
+
+        .container {
+            padding: 80px 120px; /* edited attribute */
         }
 
         /* Remove rounded borders on input fields */
@@ -36,7 +40,7 @@
             resize: none;
         }
 
-        /* Carousel */
+        /* CAROUSEL */
         .carousel-inner img { /* img is an object created inside carousel-inner class */
             -webkit-filter: grayscale(30%);
             filter: grayscale(30%);
@@ -54,7 +58,7 @@
             }
         }
 
-        /* Description Section */
+        /* DESCRIPTION */
         .person {
             border: 7px solid transparent;
             margin-bottom: 25px;
@@ -67,7 +71,7 @@
                 border-color: #f1f1f1;
             }
 
-        /* Media */
+        /* MEDIA */
         .bg-1 {
             background: #2d2d30;
             color: #bdbdbd;
@@ -125,21 +129,20 @@
                     color: #000;
                 }
 
-            /* Collabs */
-            .myLink:focus, .myLink:visited {
-                text-decoration: none;
-            }
-            
-            li > a {
+        /* COLLABS */
+        .myLink:focus, .myLink:visited {
+            text-decoration: none;
+        }
+
+        li > a {
             color: #bdbdbd;
+        }
 
-            }
-            p > a {
+        p > a {
             color: #bdbdbd;
+        }
 
-            }
-
-        /* Footer */
+        /* FOOTER */
         /* Add a dark background color to the footer */
         footer {
             background-color: #2d2d30;
@@ -158,19 +161,10 @@
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navegation bar -->
+
+    <!-- NAVEGATION BAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Navegation bar
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-            </div>
-                -->
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">HOME</a></li>
@@ -186,15 +180,13 @@
                             <li><a href="#collabs">Collabs</a></li>
                         </ul>
                     </li>
-                    <!-- Possible search icon
-                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- PAGE CONTENT -->
-    <!-- Carousel Section -->
+    <!-- CAROUSEL -->
     <div id="home" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -245,7 +237,7 @@
         </a>
     </div>
 
-    <!-- Description Section -->
+    <!-- DESCRIPTION -->
     <div id="artist" class="container text-center">
         <h3>SOUNDAKER</h3>
         <p><em>Music is my passion</em></p>
@@ -296,7 +288,7 @@
         </div>
     </div>
 
-    <!-- Media Section -->
+    <!-- MEDIA -->
     <div class="bg-1">
         <div id="media" class="container">
             <!-- Sites list -->
@@ -346,7 +338,7 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <div id="contact" class="container">
         <h3 class="text-center">CONTACT</h3>
         <p class="text-center"><em>I'd like to hear from you!</em></p>
@@ -373,7 +365,7 @@
                 </div>
             </div>
         </div>
-        <!-- Collabs -->
+        <!-- COLLABS -->
         <h3 id="collabs" class="text-center">Collabs</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#collabs1">Singing</a></li>
@@ -430,7 +422,7 @@
     </div>
     <!-- END PAGE CONTENT -->
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="text-center">
         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
             <span class="glyphicon glyphicon-chevron-up"></span>
