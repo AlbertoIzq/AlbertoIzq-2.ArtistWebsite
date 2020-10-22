@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="{{url_for('static', filename = 'css/nav_bar.css')}}" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -38,6 +39,7 @@
             height: 80%;
             opacity: 0.8;
         }
+
             .person:hover { /* hover is an attribute of person class */
                 border-color: #f1f1f1;
             }
@@ -47,12 +49,15 @@
             background: #2d2d30;
             color: #bdbdbd;
         }
+
             .bg-1 h3 {
                 color: #fff;
             }
+
             .bg-1 p {
                 font-style: italic;
             }
+
             .bg-1 a {
                 color: #bdbdbd;
             }
@@ -60,12 +65,13 @@
             .bg-1 img {
                 width: 100%;
                 height: 200px;
-             }
+            }
 
             .bg-1 .list-group-item:first-child { /* Remove rounded borders from list */
                 border-top-right-radius: 0;
                 border-top-left-radius: 0;
             }
+
             .bg-1 .list-group-item:last-child {
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0;
@@ -76,10 +82,12 @@
                 border: none;
                 border-radius: 0;
             }
+
                 .bg-1 .thumbnail p {
                     margin-top: 15px;
                     color: #555;
                 }
+
             .bg-1 .btn { /* Black buttons with extra padding and without rounded borders */
                 padding: 10px 20px;
                 background-color: #333;
@@ -87,6 +95,7 @@
                 border-radius: 0;
                 transition: .2s;
             }
+
                 .bg-1 .btn:hover, .btn:active { /* On hover, the color of .btn will transition to white with black text */
                     border: 1px solid #333;
                     background-color: #fff;

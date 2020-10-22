@@ -45,6 +45,7 @@
     <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="runtime.txt" />
+    <Content Include="static\css\nav_bar.css" />
     <Content Include="static\images\carousel1.jpg" />
     <Content Include="static\images\carousel2.jpg" />
     <Content Include="static\images\carousel3.jpg" />
