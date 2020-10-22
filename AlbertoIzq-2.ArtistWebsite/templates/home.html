@@ -102,8 +102,18 @@
                     color: #000;
                 }
 
-            .bg-1 .myLink:focus, .myLink:visited {
+            /* Collabs */
+            .myLink:focus, .myLink:visited {
                 text-decoration: none;
+            }
+            
+            li > a {
+            color: #bdbdbd;
+
+            }
+            p > a {
+            color: #bdbdbd;
+
             }
 
         /* Footer */
@@ -122,7 +132,6 @@
                     color: #777;
                     text-decoration: none;
                 }
-    </style>
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -161,6 +170,7 @@
         </div>
     </nav>
 
+    <!-- PAGE CONTENT -->
     <!-- Carousel Section -->
     <div id="home" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -310,62 +320,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Collabs -->
-            <h3 id="collabs" class="text-center">Collabs</h3>
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Singing</a></li>
-                <li><a data-toggle="tab" href="#menu1">Metal music</a></li>
-                <li><a data-toggle="tab" href="#menu2">Dancing</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <h4>DotSorcery</h4>
-                    <p>
-                        <a class="myLink" href="https://soundcloud.com/dotsorcery/fugitivos-del-sistema-ft-soundaker" target="_blank">
-                            <strong>DotSorcery - Fugitivos Del Sistema (ft. Soundaker)</strong>
-                        </a>: Lyrics and singing by me
-                    </p>
-                    <p>
-                        <a class="myLink" href="https://soundcloud.com/dotsorcery/mind-vibrations-ft-soundaker-noe-left" target="_blank">
-                            <strong>DotSorcery - Mind Vibrations (ft. Soundaker & Noe Left)</strong>
-                        </a>: Lyrics and part of singing by me
-                    </p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h4>The Greg</h4>
-                    <p>
-                        <a class="myLink" href="https://www.youtube.com/watch?v=HH_nT_GlPZs" target="_blank">
-                            <strong>Soundaker - The endless plan</strong>
-                        </a>: Singing by The Greg
-                    </p>
-                    <p>
-                        <a class="myLink" href="https://www.youtube.com/watch?v=KP34SV10Pog" target="_blank">
-                            <strong>Soundaker - Betrayed (by those of your own kind)</strong>
-                        </a>: Singing by The Greg
-                    </p>
-                    <h4>Carpathianna</h4>
-                    <p>
-                        <a class="myLink" href="https://www.youtube.com/watch?v=SpK4PvGfeU8" target="_blank">
-                            <strong>Soundaker - Follow the path</strong>
-                        </a>: Singing by Carpathianna
-                    </p>
-                    <p>
-                        <a class="myLink" href="https://www.youtube.com/watch?v=HHzUPZjN0ko" target="_blank">
-                            <strong>Soundaker - The fallen</strong>
-                        </a>: Singing by Carpathianna
-                    </p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h4>MARviK</h4>
-                    <p>
-                        <a class="myLink" href="https://www.youtube.com/watch?v=I1cZQD4p6ms" target="_blank">
-                            <strong>MARviK - Awakening</strong>
-                        </a>: Dancing by me
-                    </p>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -396,14 +350,69 @@
                 </div>
             </div>
         </div>
+        <!-- Collabs -->
+        <h3 id="collabs" class="text-center">Collabs</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#collabs1">Singing</a></li>
+            <li><a data-toggle="tab" href="#collabs2">Metal music</a></li>
+            <li><a data-toggle="tab" href="#collabs3">Dancing</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="collabs1" class="tab-pane fade in active">
+                <h4>DotSorcery</h4>
+                <p>
+                    <a class="myLink" href="https://soundcloud.com/dotsorcery/fugitivos-del-sistema-ft-soundaker" target="_blank">
+                        <strong>DotSorcery - Fugitivos Del Sistema (ft. Soundaker)</strong>
+                    </a>: Lyrics and singing by me
+                </p>
+                <p>
+                    <a class="myLink" href="https://soundcloud.com/dotsorcery/mind-vibrations-ft-soundaker-noe-left" target="_blank">
+                        <strong>DotSorcery - Mind Vibrations (ft. Soundaker & Noe Left)</strong>
+                    </a>: Lyrics and part of singing by me
+                </p>
+            </div>
+            <div id="collabs2" class="tab-pane fade">
+                <h4>The Greg</h4>
+                <p>
+                    <a class="myLink" href="https://www.youtube.com/watch?v=HH_nT_GlPZs" target="_blank">
+                        <strong>Soundaker - The endless plan</strong>
+                    </a>: Singing by The Greg
+                </p>
+                <p>
+                    <a class="myLink" href="https://www.youtube.com/watch?v=KP34SV10Pog" target="_blank">
+                        <strong>Soundaker - Betrayed (by those of your own kind)</strong>
+                    </a>: Singing by The Greg
+                </p>
+                <h4>Carpathianna</h4>
+                <p>
+                    <a class="myLink" href="https://www.youtube.com/watch?v=SpK4PvGfeU8" target="_blank">
+                        <strong>Soundaker - Follow the path</strong>
+                    </a>: Singing by Carpathianna
+                </p>
+                <p>
+                    <a class="myLink" href="https://www.youtube.com/watch?v=HHzUPZjN0ko" target="_blank">
+                        <strong>Soundaker - The fallen</strong>
+                    </a>: Singing by Carpathianna
+                </p>
+            </div>
+            <div id="collabs3" class="tab-pane fade">
+                <h4>MARviK</h4>
+                <p>
+                    <a class="myLink" href="https://www.youtube.com/watch?v=I1cZQD4p6ms" target="_blank">
+                        <strong>MARviK - Awakening</strong>
+                    </a>: Dancing by me
+                </p>
+            </div>
+        </div>
     </div>
+    <!-- END PAGE CONTENT -->
 
     <!-- Footer -->
     <footer class="text-center">
         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a><br><br>
-        <p>Made by myself using a <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a> Bootstrap theme as reference</p>
+        <p>Made by myself using Bootstrap and <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a> guidelines</p>
     </footer>
 
     <script>
