@@ -49,13 +49,17 @@
     <Content Include="static\images\carousel2.jpg" />
     <Content Include="static\images\carousel3.jpg" />
     <Content Include="static\images\carousel4.jpg" />
+    <Content Include="static\images\endpage.jpg" />
+    <Content Include="static\images\media1.jpg" />
+    <Content Include="static\images\media2.jpg" />
+    <Content Include="static\images\media3.jpg" />
+    <Content Include="static\images\media4.jpg" />
     <Content Include="static\images\soundaker1.jpg" />
     <Content Include="static\images\soundaker2.jpg" />
     <Content Include="static\images\soundaker3.jpg" />
     <Content Include="templates\bandTemplateBootstrap.html" />
     <Content Include="templates\bandTemplateW3schools.html" />
     <Content Include="templates\home.html" />
-    <Content Include="templates\test.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
