@@ -14,20 +14,25 @@
     <style>
         /* ___GENERAL___ */
         body {
-            font: 400 15px/1.8 Lato, sans-serif;
+            /*font: 400 15px/1.8 Lato, sans-serif;*/
+            /* Is the same as the previous line*/
+            font-weight: 400;
+            font-size: 1.5rem;
+            font-family: “Lato”, sans-serif;
+            line-height: 1.8;
             color: #777;
         }
 
         /* Overwrite default styles of h3 and h4 */
         h3, h4 {
-            margin: 10px 0 30px 0;
-            letter-spacing: 10px;
-            font-size: 20px;
+            margin: 1rem 0 3rem 0;
+            letter-spacing: 1rem;
+            font-size: 1.3333em;
             color: #111;
         }
 
         .container {
-            padding: 80px 120px;
+            padding: 8rem 12rem;
         }
 
         /* Remove rounded borders on input fields */
@@ -46,9 +51,9 @@
             margin-bottom: 0;
             background-color: #2d2d30;
             border: 0;
-            font-size: 11px !important;
+            font-size: 1.1rem !important;
             font-family: Montserrat, sans-serif;
-            letter-spacing: 4px;
+            letter-spacing: 0.4rem;
             opacity: 0.9;
         }
 
@@ -110,7 +115,7 @@
             height: 38vh;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 60rem) {
             .carousel-caption {
                 display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
@@ -118,8 +123,8 @@
 
         /* ___ARTIST___ */
         .person {
-            border: 7px solid transparent;
-            margin-bottom: 25px;
+            border: 0.7rem solid transparent;
+            margin-bottom: 2.5rem;
             width: 80%;
             height: 80%;
             opacity: 0.8;
@@ -158,18 +163,18 @@
             }
 
             .bg-1 .thumbnail { /* Remove border and add padding to thumbnails */
-                padding: 0 0 15px 0;
+                padding: 0 0 1.5rem 0;
                 border: none;
                 border-radius: 0;
             }
 
                 .bg-1 .thumbnail p {
-                    margin-top: 15px;
+                    margin-top: 1.5rem;
                     color: #555;
                 }
 
         .btn { /* Black buttons with extra padding and without rounded borders */
-            padding: 10px 20px;
+            padding: 1rem 2rem;
             background-color: #333;
             color: #f1f1f1;
             border-radius: 0;
@@ -177,7 +182,7 @@
         }
 
             .btn:hover, .btn:active { /* On hover, the color of .btn will transition to white with black text */
-                border: 1px solid #333;
+                border: 0.1rem solid #333;
                 background-color: #fff;
                 color: #000;
             }
@@ -200,7 +205,7 @@
         footer {
             background-color: #2d2d30;
             color: #f5f5f5;
-            padding: 32px;
+            padding: 3.2rem;
         }
 
             footer a {
@@ -322,7 +327,7 @@
         <br>
         <!-- Images -->
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <a href="#mask1" data-toggle="collapse">
                     <img src="static/images/soundaker1.jpg" class="img-circle person" alt="Soundaker 1" width="255" height="255">
                 </a>
@@ -332,7 +337,7 @@
                     <p><em>First mask</em></p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <a href="#mask2" data-toggle="collapse">
                     <img src="static/images/soundaker2.jpg" class="img-circle person" alt="Soundaker 2" width="255" height="255">
                 </a>
@@ -342,7 +347,7 @@
                     <p><em>Made in 1991</em></p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <a href="#mask3" data-toggle="collapse">
                     <img src="static/images/soundaker3.jpg" class="img-circle person" alt="Soundaker 3" width="255" height="255">
                 </a>
@@ -389,7 +394,7 @@
                     <div class="thumbnail">
                         <img src="static/images/media2.jpg" alt="Media 2">
                         <p><strong>Guitar&Singing</strong></p>
-                        <p>Classical guitar & singing covers</p>
+                        <p>Guitar & singing covers</p>
                         <a class="btn" href="https://www.youtube.com/playlist?list=PLEl4xoAAYoDikBmCeLIxOIrkCvw2KN47S" target="_blank">Playlist</a>
                     </div>
                 </div>
@@ -443,7 +448,7 @@
         </div>
         <br>
         <!-- COLLABS -->
-        <h3 id="collabs" class="text-center" style=" padding-top: 80px">Collabs</h3>
+        <h3 id="collabs" class="text-center" style=" padding-top: 0.8rem">Collabs</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#collabs1">Singing</a></li>
             <li><a data-toggle="tab" href="#collabs2">Metal music</a></li>
