@@ -34,22 +34,34 @@
         /* Container paddings depending on screen size */
         @media (max-width: 480px) {
             .container {
-                padding: 1rem 1.5rem;
+                padding: 4rem 1.5rem;
+            }
+            #collabs {
+                padding-top: 5rem;
             }
         }
         @media (min-width: 480px) and (max-width: 768px) {
             .container {
                 padding: 2rem 3rem;
             }
+            #collabs {
+                padding-top: 5rem;
+            }
         }
         @media (min-width: 768px) and (max-width: 959px) {
             .container {
-                padding: 4rem 6rem;
+                padding: 5rem 6rem;
+            }
+            #collabs {
+                padding-top: 5rem;
             }
         }
         @media (min-width: 959px) {
             .container {
-                padding: 8rem 12rem;
+                padding: 5rem 10rem;
+            }
+            #collabs {
+                padding-top: 5rem;
             }
         }
 
@@ -350,9 +362,11 @@
                     <img src="static/images/soundaker1.jpg" class="img-circle person" alt="Soundaker 1" width="255" height="255">
                 </a>
                 <div id="mask1" class="collapse">
-                    <p>Crazy man</p>
-                    <p>Does funny stuff or tries at least</p>
-                    <p><em>First mask</em></p>
+                    <p>
+                        Crazy man<br />
+                        Does funny stuff or tries at least<br />
+                        <em>First mask</em>
+                    </p>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
@@ -360,9 +374,11 @@
                     <img src="static/images/soundaker2.jpg" class="img-circle person" alt="Soundaker 2" width="255" height="255">
                 </a>
                 <div id="mask2" class="collapse">
-                    <p>Main character</p>
-                    <p>Likes dark stuff</p>
-                    <p><em>Made in 1991</em></p>
+                    <p>
+                        Main character<br />
+                        Likes dark stuff<br />
+                        <em>Made in 1991</em>
+                    </p>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
@@ -370,9 +386,11 @@
                     <img src="static/images/soundaker3.jpg" class="img-circle person" alt="Soundaker 3" width="255" height="255">
                 </a>
                 <div id="mask3" class="collapse">
-                    <p>The adventurer</p>
-                    <p>Adapts to his surroundings</p>
-                    <p><em>Troll side</em></p>
+                    <p>
+                        The adventurer<br />
+                        Adapts to his surroundings<br />
+                        <em>Troll side</em>
+                    </p>
                 </div>
             </div>
         </div>
@@ -466,7 +484,7 @@
         </div>
         <br>
         <!-- COLLABS -->
-        <h3 id="collabs" class="text-center" style=" padding-top: 0.8rem">Collabs</h3>
+        <h3 id="collabs" class="text-center">Collabs</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#collabs1">Singing</a></li>
             <li><a data-toggle="tab" href="#collabs2">Metal music</a></li>
