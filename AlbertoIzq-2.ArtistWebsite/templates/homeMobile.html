@@ -624,6 +624,13 @@
                 } // End if
             });
         })
+
+        // Collapse nav-bar menu on mobile devices on click
+        $('.navbar-collapse li a').click(function () {
+            if (!$(this).parent().hasClass('dropdown')) { // Only if you aren't clicking a dropdown menu
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
     </script>
 
 </body>
