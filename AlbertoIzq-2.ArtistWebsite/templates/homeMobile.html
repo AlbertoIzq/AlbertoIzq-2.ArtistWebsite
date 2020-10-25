@@ -56,7 +56,7 @@
                 padding-top: 5.5rem;
             }
         }
-        @media (min-width: 959px) {
+        @media (min-width: 959px) { /* Desktop */
             .container {
                 padding: 5rem 10rem;
             }
@@ -137,19 +137,49 @@
             color: #fff !important;
         }
 
-        .carousel, .carousel-inner, -carousel-inner img {
-            height: 100vh;
-        }
+        @media (max-width: 480px) { /* Mobile phone screen vertical */
+            .carousel, .carousel-inner, .carousel-inner img {
+                height: 50vh;
+            }
 
-        .carousel-caption {
-            height: 38vh;
-        }
-
-        @media (max-width: 600px) {
             .carousel-caption {
-                display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+                height: 19vh;
             }
         }
+        @media (min-width: 480px) and (max-width: 768px) { /* Mobile phone screen horizontal */
+            .carousel, .carousel-inner, .carousel-inner img {
+                height: 100vh;
+            }
+
+            .carousel-caption {
+                height: 38vh;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 959px) {
+            .carousel, .carousel-inner, .carousel-inner img {
+                height: 50vh;
+            }
+
+            .carousel-caption {
+                height: 19vh;
+            }
+        }
+        @media (min-width: 959px) { /* Desktop */
+            .carousel, .carousel-inner, .carousel-inner img {
+                height: 100vh;
+            }
+            .carousel-caption {
+                height: 38vh;
+            }
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide
+
+            @media (max-width: 600px) {
+            .carousel-caption {
+                display: none; 
+            }
+        }*/
 
         /* ___ARTIST___ */
         .person {
