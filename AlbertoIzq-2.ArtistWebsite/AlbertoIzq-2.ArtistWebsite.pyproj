@@ -59,6 +59,7 @@
     <Content Include="static\images\soundaker3.jpg" />
     <Content Include="templates\bandTemplateBootstrap.html" />
     <Content Include="templates\bandTemplateW3schools.html" />
+    <Content Include="templates\homeMobile.html" />
     <Content Include="templates\home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
